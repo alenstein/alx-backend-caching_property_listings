@@ -4,11 +4,11 @@ services:
   postgres:
     image: postgres:latest
     environment:
-      POSTGRES_DB: property_listings
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
-      - "5432:5432"
+      - ${DB_PORT}:${DB_PORT}
 
   redis:
     image: redis:latest
