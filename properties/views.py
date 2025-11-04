@@ -8,4 +8,4 @@ from .models import Property
 def property_list(request):
     properties = Property.objects.all()
     data = serialize("json", properties)
-    return JsonResponse(data, content_type="application/json")
+    return JsonResponse(data, safe=False)
