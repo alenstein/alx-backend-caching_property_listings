@@ -1,0 +1,16 @@
+asgiref==3.10.0
+async-timeout==5.0.1
+Django==4.2.25
+django-environ==0.12.0
+django-redis==6.0.0
+djangorestframework==3.16.1
+drf-yasg==1.21.11
+inflection==0.5.1
+packaging==25.0
+psycopg2-binary==2.9.11
+pytz==2025.2
+PyYAML==6.0.3
+redis==7.0.1
+sqlparse==0.5.3
+typing_extensions==4.15.0
+uritemplate==4.2.0
