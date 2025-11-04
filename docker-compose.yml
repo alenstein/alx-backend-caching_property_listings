@@ -9,8 +9,14 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     ports:
       - ${DB_PORT}:${DB_PORT}
+    volumes:
+      - postgres_data
+
 
   redis:
     image: redis:latest
     ports:
       - "6379:6379"
+    volumes:
+      - redis_data
+
